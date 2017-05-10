@@ -59,3 +59,9 @@ source 'https://rails-assets.org' do
   gem 'rails-assets-tether', '>= 1.3.3'
 end
 
+# Include Pagination
+gem 'will_paginate', '>=3.1'
+
+# Simple Form Gem
+gem 'simple_form'
+
