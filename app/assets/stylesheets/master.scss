@@ -79,4 +79,12 @@ body {
   * html .digg_pagination {
     height: 1%; }
   *:first-child + html .digg_pagination {
-    overflow: hidden; }
+    overflow: hidden; 
+  }
+
+.help-block {
+  color: #ff3333;
+  background-color: #FFEEEE;
+  border-radius: 3px;
+  padding: 2px 8px 2px 8px;
+}
