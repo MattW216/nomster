@@ -71,3 +71,9 @@ gem 'font-awesome-rails'
 # Include Devise Authentication
 gem 'devise'
 
+# Include Geocoder
+gem 'geocoder'
+
+# Include Figaro
+gem "figaro"
+
