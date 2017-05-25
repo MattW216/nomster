@@ -80,3 +80,5 @@ gem "figaro"
 # Include CarrierWave
 gem 'carrierwave', '~> 1.0'
 
+# Include Fog AWS
+gem 'fog-aws'
