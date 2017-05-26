@@ -32,7 +32,7 @@
   <% end %>
   <br />
 
-  <div class="float-right">
+  <div class="text-right">
     <% if current_user && current_user == @place.user %>
 
     <!-- Button trigger modal -->
@@ -45,8 +45,6 @@
     <% end %>
 
   </div>
-
-  <div class="clear"></div>
 
   <!-- Modal -->
   <div class="modal fade" id="myPhotoModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
@@ -78,12 +76,16 @@
   
   <h2>User Photos</h2>
   <br />
-  <% @place.photos.each do |photo| %>
-        <div>
-          <%= image_tag photo.picture %>
-          <%= photo.caption %>
-        </div>
-  <% end %>
+  <div class="row">
+    <% @place.photos.each do |photo| %>
+          <div class="col-sm-4" style="margin-bottom: 15px;">
+            <%= image_tag photo.picture, style: "max-width: 100%;" %>
+            <div>
+              <%= photo.caption %>
+            </div>
+          </div>
+    <% end %>
+  </div>
 </div>
 
 <div class="clear"></div>
