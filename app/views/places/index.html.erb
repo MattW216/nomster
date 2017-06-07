@@ -6,22 +6,27 @@
   </ol>
   <div class="carousel-inner" role="listbox">
     <div class="carousel-item active">
-      <%= image_tag 'slider1.jpg', class: 'img-fluid' %>
-      <div class="carousel-caption d-none d-md-block">
-        <h3>Find the best pizza in town!</h3>
-      </div>
+      <article style="background-image: url('<%= image_path 'slider1.jpg' %>')">
+        <%# image_tag 'slider1.jpg', class: 'img-fluid' %>
+        <div class="carousel-caption d-none d-md-block">
+          <h3>Find the best pizza in town!</h3>
+        </div>
+      </article>
     </div>
     <div class="carousel-item">
-      <%= image_tag 'slider2.jpg', class: 'img-fluid' %>
-      <div class="carousel-caption d-none d-md-block">
-        <h3>...or Pho!</h3>
-      </div>
+      <article style="background-image: url('<%= image_path 'slider2.jpg' %>')">
+        <div class="carousel-caption d-none d-md-block">
+          <h3>...or Pho!</h3>
+        </div>
+      </article>
     </div>
     <div class="carousel-item">
-      <%= image_tag 'slider3.jpg', class: 'img-fluid' %>
-      <div class="carousel-caption d-none d-md-block">
-        <h3>or, maybe you want BBQ...</h3>
-      </div>
+      <article style="background-image: url('<%= image_path 'slider3.jpg' %>')">
+      <%# image_tag 'slider3.jpg', class: 'img-fluid' %>
+        <div class="carousel-caption d-none d-md-block">
+          <h3>or, maybe you want BBQ...</h3>
+        </div>
+      </article>
     </div>
   </div>
   <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">

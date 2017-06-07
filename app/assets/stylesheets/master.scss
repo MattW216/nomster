@@ -128,10 +128,12 @@ blockquote p {
 }
 
 .carousel-caption {
-  font-family: 'Helvetica Neue', 'Helvetica', sans-serif;
-  font-size: 60px;
-  font-weight: 100;
-  text-shadow: rgba(0, 0, 0, 0.95) 2px 2px;
+  h3 {
+    font-family: 'Helvetica Neue', 'Helvetica', sans-serif;
+    font-size: 50px;
+    font-weight: 100;
+    text-shadow: rgba(0, 0, 0, 0.95) 2px 2px;
+  }
   background-color: rgba(0, 0, 0, 0.5);
   width: 100%;
   position: absolute;
@@ -144,4 +146,12 @@ blockquote p {
 
 .word-wrap {
   word-wrap: break-word;
+}
+
+article {
+  min-height: 550px;
+  max-height: 550px;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
 }
